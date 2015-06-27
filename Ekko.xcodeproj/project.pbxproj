@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411B1B3F470200E7318C /* AppDelegate.swift */; };
+		F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411D1B3F470200E7318C /* ViewController.swift */; };
+		F2B841201B3F470200E7318C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B8411F1B3F470200E7318C /* Assets.xcassets */; };
+		F2B841231B3F470200E7318C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B841211B3F470200E7318C /* Main.storyboard */; };
+		F2B8412E1B3F470200E7318C /* EkkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8412D1B3F470200E7318C /* EkkoTests.swift */; };
+		F2B841391B3F470200E7318C /* EkkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B841381B3F470200E7318C /* EkkoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2B8412A1B3F470200E7318C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B841101B3F470200E7318C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B841171B3F470200E7318C;
+			remoteInfo = Ekko;
+		};
+		F2B841351B3F470200E7318C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F2B841101B3F470200E7318C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2B841171B3F470200E7318C;
+			remoteInfo = Ekko;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F2B841181B3F470200E7318C /* Ekko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B8411B1B3F470200E7318C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F2B8411D1B3F470200E7318C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F2B8411F1B3F470200E7318C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B841221B3F470200E7318C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F2B841241B3F470200E7318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B841291B3F470200E7318C /* EkkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B8412D1B3F470200E7318C /* EkkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoTests.swift; sourceTree = "<group>"; };
+		F2B8412F1B3F470200E7318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B841341B3F470200E7318C /* EkkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2B841381B3F470200E7318C /* EkkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoUITests.swift; sourceTree = "<group>"; };
+		F2B8413A1B3F470200E7318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F2B841151B3F470200E7318C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841261B3F470200E7318C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841311B3F470200E7318C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F2B8410F1B3F470200E7318C = {
+			isa = PBXGroup;
+			children = (
+				F2B8411A1B3F470200E7318C /* Ekko */,
+				F2B8412C1B3F470200E7318C /* EkkoTests */,
+				F2B841371B3F470200E7318C /* EkkoUITests */,
+				F2B841191B3F470200E7318C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F2B841191B3F470200E7318C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B841181B3F470200E7318C /* Ekko.app */,
+				F2B841291B3F470200E7318C /* EkkoTests.xctest */,
+				F2B841341B3F470200E7318C /* EkkoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2B8411A1B3F470200E7318C /* Ekko */ = {
+			isa = PBXGroup;
+			children = (
+				F2B8411B1B3F470200E7318C /* AppDelegate.swift */,
+				F2B8411D1B3F470200E7318C /* ViewController.swift */,
+				F2B8411F1B3F470200E7318C /* Assets.xcassets */,
+				F2B841211B3F470200E7318C /* Main.storyboard */,
+				F2B841241B3F470200E7318C /* Info.plist */,
+			);
+			path = Ekko;
+			sourceTree = "<group>";
+		};
+		F2B8412C1B3F470200E7318C /* EkkoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2B8412D1B3F470200E7318C /* EkkoTests.swift */,
+				F2B8412F1B3F470200E7318C /* Info.plist */,
+			);
+			path = EkkoTests;
+			sourceTree = "<group>";
+		};
+		F2B841371B3F470200E7318C /* EkkoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F2B841381B3F470200E7318C /* EkkoUITests.swift */,
+				F2B8413A1B3F470200E7318C /* Info.plist */,
+			);
+			path = EkkoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F2B841171B3F470200E7318C /* Ekko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B8413D1B3F470200E7318C /* Build configuration list for PBXNativeTarget "Ekko" */;
+			buildPhases = (
+				F2B841141B3F470200E7318C /* Sources */,
+				F2B841151B3F470200E7318C /* Frameworks */,
+				F2B841161B3F470200E7318C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ekko;
+			productName = Ekko;
+			productReference = F2B841181B3F470200E7318C /* Ekko.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2B841281B3F470200E7318C /* EkkoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B841401B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoTests" */;
+			buildPhases = (
+				F2B841251B3F470200E7318C /* Sources */,
+				F2B841261B3F470200E7318C /* Frameworks */,
+				F2B841271B3F470200E7318C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B8412B1B3F470200E7318C /* PBXTargetDependency */,
+			);
+			name = EkkoTests;
+			productName = EkkoTests;
+			productReference = F2B841291B3F470200E7318C /* EkkoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F2B841331B3F470200E7318C /* EkkoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2B841431B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoUITests" */;
+			buildPhases = (
+				F2B841301B3F470200E7318C /* Sources */,
+				F2B841311B3F470200E7318C /* Frameworks */,
+				F2B841321B3F470200E7318C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2B841361B3F470200E7318C /* PBXTargetDependency */,
+			);
+			name = EkkoUITests;
+			productName = EkkoUITests;
+			productReference = F2B841341B3F470200E7318C /* EkkoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F2B841101B3F470200E7318C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = GreylockBetas;
+				TargetAttributes = {
+					F2B841171B3F470200E7318C = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					F2B841281B3F470200E7318C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F2B841171B3F470200E7318C;
+					};
+					F2B841331B3F470200E7318C = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = F2B841171B3F470200E7318C;
+					};
+				};
+			};
+			buildConfigurationList = F2B841131B3F470200E7318C /* Build configuration list for PBXProject "Ekko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F2B8410F1B3F470200E7318C;
+			productRefGroup = F2B841191B3F470200E7318C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2B841171B3F470200E7318C /* Ekko */,
+				F2B841281B3F470200E7318C /* EkkoTests */,
+				F2B841331B3F470200E7318C /* EkkoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F2B841161B3F470200E7318C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B841201B3F470200E7318C /* Assets.xcassets in Resources */,
+				F2B841231B3F470200E7318C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841271B3F470200E7318C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841321B3F470200E7318C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F2B841141B3F470200E7318C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */,
+				F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841251B3F470200E7318C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B8412E1B3F470200E7318C /* EkkoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B841301B3F470200E7318C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2B841391B3F470200E7318C /* EkkoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2B8412B1B3F470200E7318C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B841171B3F470200E7318C /* Ekko */;
+			targetProxy = F2B8412A1B3F470200E7318C /* PBXContainerItemProxy */;
+		};
+		F2B841361B3F470200E7318C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2B841171B3F470200E7318C /* Ekko */;
+			targetProxy = F2B841351B3F470200E7318C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F2B841211B3F470200E7318C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2B841221B3F470200E7318C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F2B8413B1B3F470200E7318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F2B8413C1B3F470200E7318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F2B8413E1B3F470200E7318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ekko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F2B8413F1B3F470200E7318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Ekko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F2B841411B3F470200E7318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EkkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.EkkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ekko.app/Contents/MacOS/Ekko";
+			};
+			name = Debug;
+		};
+		F2B841421B3F470200E7318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EkkoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.EkkoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ekko.app/Contents/MacOS/Ekko";
+			};
+			name = Release;
+		};
+		F2B841441B3F470200E7318C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EkkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.EkkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ekko;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F2B841451B3F470200E7318C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = EkkoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.EkkoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ekko;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F2B841131B3F470200E7318C /* Build configuration list for PBXProject "Ekko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B8413B1B3F470200E7318C /* Debug */,
+				F2B8413C1B3F470200E7318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F2B8413D1B3F470200E7318C /* Build configuration list for PBXNativeTarget "Ekko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B8413E1B3F470200E7318C /* Debug */,
+				F2B8413F1B3F470200E7318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2B841401B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B841411B3F470200E7318C /* Debug */,
+				F2B841421B3F470200E7318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F2B841431B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2B841441B3F470200E7318C /* Debug */,
+				F2B841451B3F470200E7318C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F2B841101B3F470200E7318C /* Project object */;
+}
