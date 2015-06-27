@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1811B3F473400A6A028 /* CFNetwork.framework */; };
+		F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1831B3F474200A6A028 /* Security.framework */; };
+		F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */; };
+		F20EF18E1B3F485000A6A028 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF18D1B3F485000A6A028 /* Firebase.framework */; };
+		F20EF18F1B3F4A5600A6A028 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1871B3F476900A6A028 /* libicucore.tbd */; };
+		F20EF1901B3F4B0A00A6A028 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1891B3F477300A6A028 /* libc++.tbd */; };
+		F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1911B3F4BEF00A6A028 /* libc++.dylib */; };
+		F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */; };
 		F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411B1B3F470200E7318C /* AppDelegate.swift */; };
 		F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411D1B3F470200E7318C /* ViewController.swift */; };
 		F2B841201B3F470200E7318C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B8411F1B3F470200E7318C /* Assets.xcassets */; };
@@ -33,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F20EF1811B3F473400A6A028 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F20EF1831B3F474200A6A028 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F20EF1871B3F476900A6A028 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		F20EF1891B3F477300A6A028 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		F20EF18D1B3F485000A6A028 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		F20EF1911B3F4BEF00A6A028 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "../../../../usr/lib/libc++.dylib"; sourceTree = "<group>"; };
+		F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = ../../../../usr/lib/libicucore.dylib; sourceTree = "<group>"; };
 		F2B841181B3F470200E7318C /* Ekko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8411B1B3F470200E7318C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B8411D1B3F470200E7318C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +68,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */,
+				F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */,
+				F20EF1901B3F4B0A00A6A028 /* libc++.tbd in Frameworks */,
+				F20EF18F1B3F4A5600A6A028 /* libicucore.tbd in Frameworks */,
+				F20EF18E1B3F485000A6A028 /* Firebase.framework in Frameworks */,
+				F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */,
+				F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */,
+				F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +99,14 @@
 		F2B8410F1B3F470200E7318C = {
 			isa = PBXGroup;
 			children = (
+				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
+				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
+				F20EF18D1B3F485000A6A028 /* Firebase.framework */,
+				F20EF1891B3F477300A6A028 /* libc++.tbd */,
+				F20EF1871B3F476900A6A028 /* libicucore.tbd */,
+				F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */,
+				F20EF1831B3F474200A6A028 /* Security.framework */,
+				F20EF1811B3F473400A6A028 /* CFNetwork.framework */,
 				F2B8411A1B3F470200E7318C /* Ekko */,
 				F2B8412C1B3F470200E7318C /* EkkoTests */,
 				F2B841371B3F470200E7318C /* EkkoUITests */,
@@ -384,8 +416,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Xcode/Ekko";
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,8 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Xcode/Ekko";
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -474,6 +510,7 @@
 				F2B8413F1B3F470200E7318C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B841401B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +519,7 @@
 				F2B841421B3F470200E7318C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F2B841431B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +528,7 @@
 				F2B841451B3F470200E7318C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
