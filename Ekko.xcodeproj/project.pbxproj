@@ -99,7 +99,6 @@
 		F2B8410F1B3F470200E7318C = {
 			isa = PBXGroup;
 			children = (
-				9B0903891B3F50D6002E9412 /* Firebase.framework */,
 				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
 				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
 				F20EF1891B3F477300A6A028 /* libc++.tbd */,
@@ -422,6 +421,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
+					"~/Developer/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -439,6 +439,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
+					"~/Developer/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
