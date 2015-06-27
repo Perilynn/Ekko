@@ -104,6 +104,7 @@
 				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
 				F20EF1891B3F477300A6A028 /* libc++.tbd */,
 				F20EF1871B3F476900A6A028 /* libicucore.tbd */,
+				956684811B3F501A00227661 /* Firebase.framework */,
 				F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */,
 				F20EF1831B3F474200A6A028 /* Security.framework */,
 				F20EF1811B3F473400A6A028 /* CFNetwork.framework */,
