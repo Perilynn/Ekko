@@ -14,7 +14,6 @@
 		954FDA221B3FA0BF00F97FFF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 954FDA201B3FA0BF00F97FFF /* MainMenu.xib */; };
 		954FDA2D1B3FA0BF00F97FFF /* EkkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FDA2C1B3FA0BF00F97FFF /* EkkoTests.swift */; };
 		954FDA381B3FA0BF00F97FFF /* EkkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FDA371B3FA0BF00F97FFF /* EkkoUITests.swift */; };
-		9B09A8DC1B3FF61B006A2EBC /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B09A8DB1B3FF61B006A2EBC /* Firebase.framework */; };
 		9B09A8DE1B3FF9AA006A2EBC /* FirebaseInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B09A8DD1B3FF9AA006A2EBC /* FirebaseInterface.swift */; };
 		F2311C481B3FEA3100B83BA0 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2311C461B3FEA3100B83BA0 /* libc++.dylib */; };
 		F2311C491B3FEA3100B83BA0 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F2311C471B3FEA3100B83BA0 /* libicucore.dylib */; };
@@ -23,6 +22,7 @@
 		F2311C4F1B3FEA4F00B83BA0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2311C4E1B3FEA4F00B83BA0 /* SystemConfiguration.framework */; };
 		F2C625521B3FF03300105395 /* AppIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C625511B3FF03300105395 /* AppIdentifier.swift */; };
 		F2C625541B3FF04B00105395 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C625531B3FF04B00105395 /* RequestHandler.swift */; };
+		F2E8FFCE1B404BAD00D772B9 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E8FFCD1B404BAD00D772B9 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,6 @@
 		954FDA331B3FA0BF00F97FFF /* EkkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		954FDA371B3FA0BF00F97FFF /* EkkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoUITests.swift; sourceTree = "<group>"; };
 		954FDA391B3FA0BF00F97FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B09A8DB1B3FF61B006A2EBC /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		9B09A8DD1B3FF9AA006A2EBC /* FirebaseInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseInterface.swift; sourceTree = "<group>"; };
 		F2311C461B3FEA3100B83BA0 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "../../../../usr/lib/libc++.dylib"; sourceTree = "<group>"; };
 		F2311C471B3FEA3100B83BA0 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = ../../../../usr/lib/libicucore.dylib; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		F2311C521B3FEC2E00B83BA0 /* Ekko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ekko-Bridging-Header.h"; sourceTree = "<group>"; };
 		F2C625511B3FF03300105395 /* AppIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIdentifier.swift; sourceTree = "<group>"; };
 		F2C625531B3FF04B00105395 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		F2E8FFCD1B404BAD00D772B9 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B09A8DC1B3FF61B006A2EBC /* Firebase.framework in Frameworks */,
 				F2311C4F1B3FEA4F00B83BA0 /* SystemConfiguration.framework in Frameworks */,
+				F2E8FFCE1B404BAD00D772B9 /* Firebase.framework in Frameworks */,
 				F2311C4D1B3FEA4700B83BA0 /* Security.framework in Frameworks */,
 				F2311C4B1B3FEA3F00B83BA0 /* CFNetwork.framework in Frameworks */,
 				F2311C481B3FEA3100B83BA0 /* libc++.dylib in Frameworks */,
@@ -102,7 +102,7 @@
 		954FDA101B3FA0BF00F97FFF = {
 			isa = PBXGroup;
 			children = (
-				9B09A8DB1B3FF61B006A2EBC /* Firebase.framework */,
+				F2E8FFCD1B404BAD00D772B9 /* Firebase.framework */,
 				F2311C521B3FEC2E00B83BA0 /* Ekko-Bridging-Header.h */,
 				F2311C4E1B3FEA4F00B83BA0 /* SystemConfiguration.framework */,
 				F2311C4C1B3FEA4700B83BA0 /* Security.framework */,
@@ -432,6 +432,7 @@
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
 					"~/Developer/Ekko",
+					"~/Desktop/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -453,6 +454,7 @@
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
 					"~/Developer/Ekko",
+					"~/Desktop/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
