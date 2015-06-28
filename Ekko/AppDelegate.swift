@@ -37,7 +37,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.hasShadow = false
     window.alphaValue = 0.5
     window.level = Int(CGWindowLevelForKey(CGWindowLevelKey.MaximumWindowLevelKey))
-    let activeRegion = EkkoView(window.frame)
+    let activeRegion = EkkoView(frame: window.frame)
     window.contentView.addSubview(activeRegion)
     
   }
@@ -51,8 +51,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
 class EkkoView: NSView {
   
-  init(frame: NSFrame) {
-    super.init(frame: NSRect(x: 0, y: 0, width: 0, height: 0))
+  override init(frame: NSRect) {
+    super.init(frame: frame)
   }
 
   required init?(coder: NSCoder) {
