@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2B841171B3F470200E7318C"
+               BlueprintIdentifier = "954FDA181B3FA0BF00F97FFF"
                BuildableName = "Ekko.app"
                BlueprintName = "Ekko"
                ReferencedContainer = "container:Ekko.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2B841281B3F470200E7318C"
+               BlueprintIdentifier = "954FDA271B3FA0BF00F97FFF"
                BuildableName = "EkkoTests.xctest"
                BlueprintName = "EkkoTests"
                ReferencedContainer = "container:Ekko.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2B841331B3F470200E7318C"
+               BlueprintIdentifier = "954FDA321B3FA0BF00F97FFF"
                BuildableName = "EkkoUITests.xctest"
                BlueprintName = "EkkoUITests"
                ReferencedContainer = "container:Ekko.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2B841171B3F470200E7318C"
+            BlueprintIdentifier = "954FDA181B3FA0BF00F97FFF"
             BuildableName = "Ekko.app"
             BlueprintName = "Ekko"
             ReferencedContainer = "container:Ekko.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2B841171B3F470200E7318C"
+            BlueprintIdentifier = "954FDA181B3FA0BF00F97FFF"
             BuildableName = "Ekko.app"
             BlueprintName = "Ekko"
             ReferencedContainer = "container:Ekko.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F2B841171B3F470200E7318C"
+            BlueprintIdentifier = "954FDA181B3FA0BF00F97FFF"
             BuildableName = "Ekko.app"
             BlueprintName = "Ekko"
             ReferencedContainer = "container:Ekko.xcodeproj">
