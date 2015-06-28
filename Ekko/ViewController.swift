@@ -7,14 +7,21 @@
 //
 
 import Cocoa
-import AppKit
-import Foundation
-import CoreGraphics
 
 class ViewController: NSViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    // Write data to Firebase
+    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
+    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
+    var usersRef = myRef.childByAppendingPath("users")
+    
+    var users = ["Aravind": myLink, "Naren": yourLink]
+    usersRef.setValue(users)
+    // Do any additional setup after loading the view.
+    
   }
 
   override var representedObject: AnyObject? {
@@ -22,4 +29,9 @@ class ViewController: NSViewController {
     // Update the view, if already loaded.
     }
   }
+  
+  
+
+
 }
+
