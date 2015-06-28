@@ -16,11 +16,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var appCreator = RequestHandler()
     var state: MousePositionState = .Exited
     @IBOutlet weak var window: NSWindow!
-    @IBOutlet weak var statusMenu: NSMenu!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     var firebaseConnector = FirebaseInterface()
     var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
-    
+    let quitItem = NSMenuItem(title: "Quit", action: "quit", keyEquivalent: "q")
+    let focusItem = NSMenuItem(title: "Focus Mode", action: "focus", keyEquivalent: "f")
+
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         window.styleMask = NSBorderlessWindowMask
         let screen = NSScreen.mainScreen()!.frame
@@ -30,18 +31,21 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.alphaValue = 0.01
         window.level = Int(CGWindowLevelForKey(CGWindowLevelKey.MaximumWindowLevelKey))
         
-        let icon = NSImage(named: "MenuIcon")
-        statusItem.image = icon
-        statusItem.menu = statusMenu
+        statusItem.image = NSImage(named: "MenuIcon")
+        statusItem.menu = NSMenu(title: "Ekko")
+        
+        statusItem.menu!.addItem(focusItem)
+        statusItem.menu!.addItem(quitItem)
+        
         authWithPassword()
         
         NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.LeftMouseDraggedMask) { (event: NSEvent) -> Void in
-            if NSScreen.mainScreen()!.frame.width - event.locationInWindow.x < 35 {
+            if NSScreen.mainScreen()!.frame.width - event.locationInWindow.x < 50 {
                 if self.state == .Exited {
-                    print("entered")
                     var app:[String?] = self.appId.getActiveApplication()
-                    print(app[1]!)
-                    self.hasBumped(app[1]!)
+                    if app[1] != nil {
+                        self.hasBumped(app[1]!)
+                    }
                     self.showHideEkko(.Entered)
                     self.state = .Entered
                 } else {
@@ -53,6 +57,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.state = .Exited
             }
         }
+    }
+    
+    func quit() {
+        NSApp.terminate(nil)
+    }
+    
+    var ekkoing = true
+    func focus() {
+        if ekkoing {
+            myRef.removeAllObservers()
+            focusItem.title = "Focus Mode ✓"
+        } else {
+            firebaseListener()
+            focusItem.title = "Focus Mode"
+        }
+        ekkoing = !ekkoing
     }
     
     func showHideEkko(state: MousePositionState) {
@@ -87,19 +107,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func authWithGitHub() {
         
-        
     }
     
     func hasBumped(url: String) {
-        // Write data to Firebase
-        //    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-        //    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-        //    var usersRef = myRef.childByAppendingPath("users")
-        //
-        //    var users = ["Aravind": myLink, "Naren": yourLink]
-        //    usersRmief.setValue(users)
         let link = ["name": "Google Chrome", "url": url]
-        print("SENT")
         myRef.updateChildValues(link)
     }
     

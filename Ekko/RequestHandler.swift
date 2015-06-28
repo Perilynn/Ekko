@@ -9,18 +9,20 @@
 import Foundation
 
 class RequestHandler:NSObject {
-    
+    var pastString: String?
     func handleUrlRequest(url: String?){
-        print(url)
-        if url != nil{
-            let myAppleScript = "open location \"\(url!)\""
-            var error: NSDictionary?
-            if let scriptObject = NSAppleScript(source: myAppleScript) {
-                scriptObject.executeAndReturnError(&error)
-                if (error != nil) {
-                    print("error: \(error)")
+        if pastString != url {
+            pastString = url
+            if url != nil{
+                let myAppleScript = "open location \"\(url!)\""
+                var error: NSDictionary?
+                if let scriptObject = NSAppleScript(source: myAppleScript) {
+                    scriptObject.executeAndReturnError(&error)
+                    if (error != nil) {
+                        print("error: \(error)")
+                    }
+                    
                 }
-                
             }
         }
     }
