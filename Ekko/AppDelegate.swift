@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Ekko
 //
-//  Created by Aravind Sundaresan on 6/27/15.
+//  Created by Rauhul Varma on 6/27/15.
 //  Copyright © 2015 GreylockBetas. All rights reserved.
 //
 
@@ -11,71 +11,56 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
   
-  @IBOutlet weak var statusMenu: NSMenu!
-  
-  var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
-  
-  let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+  let responder = EkkoResponder()
+  var state: mousePositionState = .Exited
+  @IBOutlet weak var window: NSWindow!
 
   func applicationDidFinishLaunching(aNotification: NSNotification) {
-    // Insert code here to initialize your application
-    let icon = NSImage(named: "MenuIcon")
-    statusItem.image = icon
-    statusItem.menu = statusMenu
-    authWithPassword()
-    hasBumped("https://www.google.com")
+    window.styleMask = NSBorderlessWindowMask
+    window.setFrame(NSRect(x: 0, y: 0, width: 0, height: 0), display: false)
+    
+    NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.LeftMouseDraggedMask) { (event: NSEvent) -> Void in
+      if NSScreen.mainScreen()!.frame.width - event.locationInWindow.x < 25 {
+        if self.state == .Exited {
+          self.responder.commonShowMeSomthingNew(.Entered)
+          self.state = .Entered
+        } else {
+          self.responder.commonShowMeSomthingNew(.Inside)
+          self.state = .Inside
+        }
+      } else if self.state == .Entered || self.state == .Inside {
+        self.responder.commonShowMeSomthingNew(.Exited)
+        self.state = .Exited
+      }
+      
+    }
+  }
+  
+  func showHideEkko() {
+    
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
     // Insert code here to tear down your application
   }
-  
-  @IBAction func menuClicked(sender: NSMenuItem) {
-    // when icon on statusBar is clicked
-  }
-  
-  @IBAction func quitClicked(sender: NSMenuItem) {
-    NSApplication.sharedApplication().terminate(self)
-  }
-  
-  func authWithPassword() {
-    myRef.authUser("sundrsn2@illinois.edu", password: "ekko1",
-      withCompletionBlock: {error, authData in
+}
 
-        if error != nil {
-          //error logging in
-        }
-        else {
-          //now logged in
-        }
-    });
-    firebaseListener()
+class EkkoResponder: NSObject {
+  func commonShowMeSomthingNew(state: mousePositionState) {
+    switch state {
+    case .Entered:
+      print("Entered")
+    case .Inside:
+      print("Inside")
+    case .Exited:
+      print("Exited")
+    default:
+      NSLog("")
+    }
   }
-  
-  func authWithGitHub() {
-    
-    
-  }
-  
-  func hasBumped(url: String) {
-    // Write data to Firebase
-//    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-//    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-//    var usersRef = myRef.childByAppendingPath("users")
-//    
-//    var users = ["Aravind": myLink, "Naren": yourLink]
-//    usersRef.setValue(users)
-    var link = ["name": "Google Chrome", "url": url]
-    myRef.updateChildValues(link)
-  }
-  
-  func firebaseListener() {
-    myRef.observeEventType(.Value, withBlock: { snapshot in
-      print(snapshot.value.objectForKey("url")!)
-      }, withCancelBlock: { error in
-        print(error.description)
-    })
-  }
+}
 
+enum mousePositionState {
+  case Entered, Inside, Exited
 }
 
