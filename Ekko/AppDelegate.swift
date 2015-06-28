@@ -47,6 +47,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           //now logged in
         }
     });
+    hasBumped()
   }
   
   func authWithGitHub() {    
