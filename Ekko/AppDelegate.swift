@@ -94,7 +94,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     //    var usersRef = myRef.childByAppendingPath("users")
     //
     //    var users = ["Aravind": myLink, "Naren": yourLink]
-    //    usersRef.setValue(users)
+    //    usersRmief.setValue(users)
     var link = ["name": "Google Chrome", "url": url]
     myRef.updateChildValues(link)
   }

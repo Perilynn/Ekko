@@ -20,6 +20,8 @@
 		F2311C4D1B3FEA4700B83BA0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2311C4C1B3FEA4700B83BA0 /* Security.framework */; };
 		F2311C4F1B3FEA4F00B83BA0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2311C4E1B3FEA4F00B83BA0 /* SystemConfiguration.framework */; };
 		F2C625501B3FECC700105395 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C6254F1B3FECC700105395 /* Firebase.framework */; };
+		F2C625521B3FF03300105395 /* AppIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C625511B3FF03300105395 /* AppIdentifier.swift */; };
+		F2C625541B3FF04B00105395 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C625531B3FF04B00105395 /* RequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		F2311C4E1B3FEA4F00B83BA0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F2311C521B3FEC2E00B83BA0 /* Ekko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ekko-Bridging-Header.h"; sourceTree = "<group>"; };
 		F2C6254F1B3FECC700105395 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		F2C625511B3FF03300105395 /* AppIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppIdentifier.swift; sourceTree = "<group>"; };
+		F2C625531B3FF04B00105395 /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				954FDA1C1B3FA0BF00F97FFF /* AppDelegate.swift */,
+				F2C625511B3FF03300105395 /* AppIdentifier.swift */,
+				F2C625531B3FF04B00105395 /* RequestHandler.swift */,
 				951315781B3FE45200039B26 /* EkkoResponder.swift */,
 				951315761B3FE43100039B26 /* Enums.swift */,
 				954FDA1E1B3FA0BF00F97FFF /* Assets.xcassets */,
@@ -282,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				951315771B3FE43100039B26 /* Enums.swift in Sources */,
+				F2C625541B3FF04B00105395 /* RequestHandler.swift in Sources */,
 				951315791B3FE45200039B26 /* EkkoResponder.swift in Sources */,
+				F2C625521B3FF03300105395 /* AppIdentifier.swift in Sources */,
 				954FDA1D1B3FA0BF00F97FFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
