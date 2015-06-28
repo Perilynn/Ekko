@@ -16,12 +16,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
   
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-
+  
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     // Insert code here to initialize your application
     let icon = NSImage(named: "MenuIcon")
     statusItem.image = icon
     statusItem.menu = statusMenu
+    authWithPassword()
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
@@ -55,13 +56,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   
   func hasBumped() {
     // Write data to Firebase
-    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
+    firebaseListener()
+    var myLink = ["application": "Chrome", "url": "https://www.google.com"]
+    var yourLink = ["application": "Safari", "url": "https://www.facebook.com"]
     var usersRef = myRef.childByAppendingPath("users")
     
     var users = ["Aravind": myLink, "Naren": yourLink]
     usersRef.setValue(users)
   }
+  
+  
+  func firebaseListener() {
+    myRef.observeEventType(.Value, withBlock: { snapshot in
+      print(snapshot.value)
+      }, withCancelBlock: { error in
+        print(error.description)
+    })
+  }
+  
+  
 
 }
 
