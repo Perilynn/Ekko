@@ -16,13 +16,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
   
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-  
+
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     // Insert code here to initialize your application
     let icon = NSImage(named: "MenuIcon")
     statusItem.image = icon
     statusItem.menu = statusMenu
     authWithPassword()
+    hasBumped("https://www.google.com")
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
@@ -48,33 +49,33 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           //now logged in
         }
     });
-    hasBumped()
+    firebaseListener()
   }
   
-//  func authWithGitHub() {    
-//  }
+  func authWithGitHub() {
+    
+    
+  }
   
-  func hasBumped() {
+  func hasBumped(url: String) {
     // Write data to Firebase
-    firebaseListener()
-    var myLink = ["application": "Chrome", "url": "https://www.google.com"]
-    var yourLink = ["application": "Safari", "url": "https://www.facebook.com"]
-    var usersRef = myRef.childByAppendingPath("users")
-    
-    var users = ["Aravind": myLink, "Naren": yourLink]
-    usersRef.setValue(users)
-    
+//    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
+//    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
+//    var usersRef = myRef.childByAppendingPath("users")
+//    
+//    var users = ["Aravind": myLink, "Naren": yourLink]
+//    usersRef.setValue(users)
+    var link = ["url": url]
+    myRef.updateChildValues(link)
   }
   
   func firebaseListener() {
     myRef.observeEventType(.Value, withBlock: { snapshot in
-      print(snapshot.value)
+      print(snapshot.children.nextObject()!.value)
       }, withCancelBlock: { error in
         print(error.description)
     })
   }
-  
-  
 
 }
 
