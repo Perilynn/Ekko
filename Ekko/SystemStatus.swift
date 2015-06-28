@@ -7,7 +7,8 @@
 //
 
 import Foundation
-
+import Cocoa
+import UIApplication
 class SystemStatus: NSObject {
     //getActiveApplication
     //returns the active application
@@ -26,7 +27,7 @@ class SystemStatus: NSObject {
             else if (error != nil) {
                 print("error: \(error)")
             }
-        }
+        }fac
         return appAndUrl
     }
 
@@ -102,5 +103,10 @@ class SystemStatus: NSObject {
             }
         }
         return nil
+    }
+    
+    func openPage(url: String) -> String {
+        let url = NSURL(string: "\(url)")!
+        UIApplication.sharedApplication().openURL(url)
     }
 }
