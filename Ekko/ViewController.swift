@@ -16,13 +16,10 @@ class ViewController: NSViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Write data to Firebase
-    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-    var usersRef = myRef.childByAppendingPath("users")
-    
-    var users = ["Aravind": myLink, "Naren": yourLink]
-    usersRef.setValue(users)
+    let view2 = NSView(frame: view.frame)
+    view2.wantsLayer = true
+    view2.layer?.backgroundColor = CGColorCreateGenericRGB(1.0, 0, 0, 1.0)
+    view.addSubview(view2)
     // Do any additional setup after loading the view.
     
   }
@@ -32,8 +29,7 @@ class ViewController: NSViewController {
     // Update the view, if already loaded.
     }
   }
-  
-  
+}
 
 class apple: NSView {
   
