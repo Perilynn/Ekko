@@ -27,21 +27,32 @@
 		F2B841231B3F470200E7318C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B841211B3F470200E7318C /* Main.storyboard */; };
 		F2B8412E1B3F470200E7318C /* EkkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8412D1B3F470200E7318C /* EkkoTests.swift */; };
 		F2B841391B3F470200E7318C /* EkkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B841381B3F470200E7318C /* EkkoUITests.swift */; };
+		954FDA1D1B3FA0BF00F97FFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FDA1C1B3FA0BF00F97FFF /* AppDelegate.swift */; };
+		954FDA1F1B3FA0BF00F97FFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 954FDA1E1B3FA0BF00F97FFF /* Assets.xcassets */; };
+		954FDA221B3FA0BF00F97FFF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 954FDA201B3FA0BF00F97FFF /* MainMenu.xib */; };
+		954FDA2D1B3FA0BF00F97FFF /* EkkoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FDA2C1B3FA0BF00F97FFF /* EkkoTests.swift */; };
+		954FDA381B3FA0BF00F97FFF /* EkkoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954FDA371B3FA0BF00F97FFF /* EkkoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		F2B8412A1B3F470200E7318C /* PBXContainerItemProxy */ = {
+		954FDA291B3FA0BF00F97FFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F2B841101B3F470200E7318C /* Project object */;
+			containerPortal = 954FDA111B3FA0BF00F97FFF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F2B841171B3F470200E7318C;
+			remoteGlobalIDString = 954FDA181B3FA0BF00F97FFF;
 			remoteInfo = Ekko;
 		};
 		F2B841351B3F470200E7318C /* PBXContainerItemProxy */ = {
+		954FDA341B3FA0BF00F97FFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F2B841101B3F470200E7318C /* Project object */;
+			containerPortal = 954FDA111B3FA0BF00F97FFF /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F2B841171B3F470200E7318C;
+			remoteGlobalIDString = 954FDA181B3FA0BF00F97FFF;
 			remoteInfo = Ekko;
 		};
 /* End PBXContainerItemProxy section */
@@ -70,10 +81,22 @@
 		F2B841341B3F470200E7318C /* EkkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B841381B3F470200E7318C /* EkkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoUITests.swift; sourceTree = "<group>"; };
 		F2B8413A1B3F470200E7318C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954FDA191B3FA0BF00F97FFF /* Ekko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		954FDA1C1B3FA0BF00F97FFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		954FDA1E1B3FA0BF00F97FFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		954FDA211B3FA0BF00F97FFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		954FDA231B3FA0BF00F97FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954FDA281B3FA0BF00F97FFF /* EkkoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954FDA2C1B3FA0BF00F97FFF /* EkkoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoTests.swift; sourceTree = "<group>"; };
+		954FDA2E1B3FA0BF00F97FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954FDA331B3FA0BF00F97FFF /* EkkoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EkkoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954FDA371B3FA0BF00F97FFF /* EkkoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EkkoUITests.swift; sourceTree = "<group>"; };
+		954FDA391B3FA0BF00F97FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2B841151B3F470200E7318C /* Frameworks */ = {
+		954FDA161B3FA0BF00F97FFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +112,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841261B3F470200E7318C /* Frameworks */ = {
+		954FDA251B3FA0BF00F97FFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,6 +120,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841311B3F470200E7318C /* Frameworks */ = {
+		954FDA301B3FA0BF00F97FFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -106,14 +131,20 @@
 
 /* Begin PBXGroup section */
 		9B1466B61B3F556500CC54C4 /* scripts */ = {
+		954FDA101B3FA0BF00F97FFF = {
 			isa = PBXGroup;
 			children = (
 				9B1466B71B3F558600CC54C4 /* chrome-state.scpt */,
+				954FDA1B1B3FA0BF00F97FFF /* Ekko */,
+				954FDA2B1B3FA0BF00F97FFF /* EkkoTests */,
+				954FDA361B3FA0BF00F97FFF /* EkkoUITests */,
+				954FDA1A1B3FA0BF00F97FFF /* Products */,
 			);
 			name = scripts;
 			sourceTree = "<group>";
 		};
 		F2B8410F1B3F470200E7318C = {
+		954FDA1A1B3FA0BF00F97FFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
@@ -128,6 +159,9 @@
 				F2B8412C1B3F470200E7318C /* EkkoTests */,
 				F2B841371B3F470200E7318C /* EkkoUITests */,
 				F2B841191B3F470200E7318C /* Products */,
+				954FDA191B3FA0BF00F97FFF /* Ekko.app */,
+				954FDA281B3FA0BF00F97FFF /* EkkoTests.xctest */,
+				954FDA331B3FA0BF00F97FFF /* EkkoUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +176,7 @@
 			sourceTree = "<group>";
 		};
 		F2B8411A1B3F470200E7318C /* Ekko */ = {
+		954FDA1B1B3FA0BF00F97FFF /* Ekko */ = {
 			isa = PBXGroup;
 			children = (
 				9B09A8CF1B3FA55C006A2EBC /* Ekko.entitlements */,
@@ -152,24 +187,34 @@
 				F2B8411F1B3F470200E7318C /* Assets.xcassets */,
 				F2B841211B3F470200E7318C /* Main.storyboard */,
 				F2B841241B3F470200E7318C /* Info.plist */,
+				954FDA1C1B3FA0BF00F97FFF /* AppDelegate.swift */,
+				954FDA1E1B3FA0BF00F97FFF /* Assets.xcassets */,
+				954FDA201B3FA0BF00F97FFF /* MainMenu.xib */,
+				954FDA231B3FA0BF00F97FFF /* Info.plist */,
 			);
 			path = Ekko;
 			sourceTree = "<group>";
 		};
 		F2B8412C1B3F470200E7318C /* EkkoTests */ = {
+		954FDA2B1B3FA0BF00F97FFF /* EkkoTests */ = {
 			isa = PBXGroup;
 			children = (
 				F2B8412D1B3F470200E7318C /* EkkoTests.swift */,
 				F2B8412F1B3F470200E7318C /* Info.plist */,
+				954FDA2C1B3FA0BF00F97FFF /* EkkoTests.swift */,
+				954FDA2E1B3FA0BF00F97FFF /* Info.plist */,
 			);
 			path = EkkoTests;
 			sourceTree = "<group>";
 		};
 		F2B841371B3F470200E7318C /* EkkoUITests */ = {
+		954FDA361B3FA0BF00F97FFF /* EkkoUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F2B841381B3F470200E7318C /* EkkoUITests.swift */,
 				F2B8413A1B3F470200E7318C /* Info.plist */,
+				954FDA371B3FA0BF00F97FFF /* EkkoUITests.swift */,
+				954FDA391B3FA0BF00F97FFF /* Info.plist */,
 			);
 			path = EkkoUITests;
 			sourceTree = "<group>";
@@ -178,12 +223,17 @@
 
 /* Begin PBXNativeTarget section */
 		F2B841171B3F470200E7318C /* Ekko */ = {
+		954FDA181B3FA0BF00F97FFF /* Ekko */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B8413D1B3F470200E7318C /* Build configuration list for PBXNativeTarget "Ekko" */;
+			buildConfigurationList = 954FDA3C1B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "Ekko" */;
 			buildPhases = (
 				F2B841141B3F470200E7318C /* Sources */,
 				F2B841151B3F470200E7318C /* Frameworks */,
 				F2B841161B3F470200E7318C /* Resources */,
+				954FDA151B3FA0BF00F97FFF /* Sources */,
+				954FDA161B3FA0BF00F97FFF /* Frameworks */,
+				954FDA171B3FA0BF00F97FFF /* Resources */,
 			);
 			buildRules = (
 			);
@@ -192,54 +242,71 @@
 			name = Ekko;
 			productName = Ekko;
 			productReference = F2B841181B3F470200E7318C /* Ekko.app */;
+			productReference = 954FDA191B3FA0BF00F97FFF /* Ekko.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F2B841281B3F470200E7318C /* EkkoTests */ = {
+		954FDA271B3FA0BF00F97FFF /* EkkoTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B841401B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoTests" */;
+			buildConfigurationList = 954FDA3F1B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "EkkoTests" */;
 			buildPhases = (
 				F2B841251B3F470200E7318C /* Sources */,
 				F2B841261B3F470200E7318C /* Frameworks */,
 				F2B841271B3F470200E7318C /* Resources */,
+				954FDA241B3FA0BF00F97FFF /* Sources */,
+				954FDA251B3FA0BF00F97FFF /* Frameworks */,
+				954FDA261B3FA0BF00F97FFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F2B8412B1B3F470200E7318C /* PBXTargetDependency */,
+				954FDA2A1B3FA0BF00F97FFF /* PBXTargetDependency */,
 			);
 			name = EkkoTests;
 			productName = EkkoTests;
 			productReference = F2B841291B3F470200E7318C /* EkkoTests.xctest */;
+			productReference = 954FDA281B3FA0BF00F97FFF /* EkkoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F2B841331B3F470200E7318C /* EkkoUITests */ = {
+		954FDA321B3FA0BF00F97FFF /* EkkoUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2B841431B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoUITests" */;
+			buildConfigurationList = 954FDA421B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "EkkoUITests" */;
 			buildPhases = (
 				F2B841301B3F470200E7318C /* Sources */,
 				F2B841311B3F470200E7318C /* Frameworks */,
 				F2B841321B3F470200E7318C /* Resources */,
+				954FDA2F1B3FA0BF00F97FFF /* Sources */,
+				954FDA301B3FA0BF00F97FFF /* Frameworks */,
+				954FDA311B3FA0BF00F97FFF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F2B841361B3F470200E7318C /* PBXTargetDependency */,
+				954FDA351B3FA0BF00F97FFF /* PBXTargetDependency */,
 			);
 			name = EkkoUITests;
 			productName = EkkoUITests;
 			productReference = F2B841341B3F470200E7318C /* EkkoUITests.xctest */;
+			productReference = 954FDA331B3FA0BF00F97FFF /* EkkoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		F2B841101B3F470200E7318C /* Project object */ = {
+		954FDA111B3FA0BF00F97FFF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = GreylockBetas;
 				TargetAttributes = {
 					F2B841171B3F470200E7318C = {
+					954FDA181B3FA0BF00F97FFF = {
 						CreatedOnToolsVersion = 7.0;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
@@ -248,16 +315,21 @@
 						};
 					};
 					F2B841281B3F470200E7318C = {
+					954FDA271B3FA0BF00F97FFF = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = F2B841171B3F470200E7318C;
+						TestTargetID = 954FDA181B3FA0BF00F97FFF;
 					};
 					F2B841331B3F470200E7318C = {
+					954FDA321B3FA0BF00F97FFF = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = F2B841171B3F470200E7318C;
+						TestTargetID = 954FDA181B3FA0BF00F97FFF;
 					};
 				};
 			};
 			buildConfigurationList = F2B841131B3F470200E7318C /* Build configuration list for PBXProject "Ekko" */;
+			buildConfigurationList = 954FDA141B3FA0BF00F97FFF /* Build configuration list for PBXProject "Ekko" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,28 +339,37 @@
 			);
 			mainGroup = F2B8410F1B3F470200E7318C;
 			productRefGroup = F2B841191B3F470200E7318C /* Products */;
+			mainGroup = 954FDA101B3FA0BF00F97FFF;
+			productRefGroup = 954FDA1A1B3FA0BF00F97FFF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F2B841171B3F470200E7318C /* Ekko */,
 				F2B841281B3F470200E7318C /* EkkoTests */,
 				F2B841331B3F470200E7318C /* EkkoUITests */,
+				954FDA181B3FA0BF00F97FFF /* Ekko */,
+				954FDA271B3FA0BF00F97FFF /* EkkoTests */,
+				954FDA321B3FA0BF00F97FFF /* EkkoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F2B841161B3F470200E7318C /* Resources */ = {
+		954FDA171B3FA0BF00F97FFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B1466B81B3F558600CC54C4 /* chrome-state.scpt in Resources */,
 				F2B841201B3F470200E7318C /* Assets.xcassets in Resources */,
 				F2B841231B3F470200E7318C /* Main.storyboard in Resources */,
+				954FDA1F1B3FA0BF00F97FFF /* Assets.xcassets in Resources */,
+				954FDA221B3FA0BF00F97FFF /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841271B3F470200E7318C /* Resources */ = {
+		954FDA261B3FA0BF00F97FFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -297,6 +378,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841321B3F470200E7318C /* Resources */ = {
+		954FDA311B3FA0BF00F97FFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,30 +390,36 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		F2B841141B3F470200E7318C /* Sources */ = {
+		954FDA151B3FA0BF00F97FFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */,
 				F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */,
 				9B1466BC1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
+				954FDA1D1B3FA0BF00F97FFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841251B3F470200E7318C /* Sources */ = {
+		954FDA241B3FA0BF00F97FFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B1466BD1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
 				F2B8412E1B3F470200E7318C /* EkkoTests.swift in Sources */,
+				954FDA2D1B3FA0BF00F97FFF /* EkkoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F2B841301B3F470200E7318C /* Sources */ = {
+		954FDA2F1B3FA0BF00F97FFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9B1466BE1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
 				F2B841391B3F470200E7318C /* EkkoUITests.swift in Sources */,
+				954FDA381B3FA0BF00F97FFF /* EkkoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,30 +427,40 @@
 
 /* Begin PBXTargetDependency section */
 		F2B8412B1B3F470200E7318C /* PBXTargetDependency */ = {
+		954FDA2A1B3FA0BF00F97FFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F2B841171B3F470200E7318C /* Ekko */;
 			targetProxy = F2B8412A1B3F470200E7318C /* PBXContainerItemProxy */;
+			target = 954FDA181B3FA0BF00F97FFF /* Ekko */;
+			targetProxy = 954FDA291B3FA0BF00F97FFF /* PBXContainerItemProxy */;
 		};
 		F2B841361B3F470200E7318C /* PBXTargetDependency */ = {
+		954FDA351B3FA0BF00F97FFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F2B841171B3F470200E7318C /* Ekko */;
 			targetProxy = F2B841351B3F470200E7318C /* PBXContainerItemProxy */;
+			target = 954FDA181B3FA0BF00F97FFF /* Ekko */;
+			targetProxy = 954FDA341B3FA0BF00F97FFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F2B841211B3F470200E7318C /* Main.storyboard */ = {
+		954FDA201B3FA0BF00F97FFF /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F2B841221B3F470200E7318C /* Base */,
+				954FDA211B3FA0BF00F97FFF /* Base */,
 			);
 			name = Main.storyboard;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F2B8413B1B3F470200E7318C /* Debug */ = {
+		954FDA3A1B3FA0BF00F97FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -400,6 +498,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -408,6 +507,7 @@
 			name = Debug;
 		};
 		F2B8413C1B3F470200E7318C /* Release */ = {
+		954FDA3B1B3FA0BF00F97FFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -439,12 +539,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		F2B8413E1B3F470200E7318C /* Debug */ = {
+		954FDA3D1B3FA0BF00F97FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -463,6 +565,7 @@
 			name = Debug;
 		};
 		F2B8413F1B3F470200E7318C /* Release */ = {
+		954FDA3E1B3FA0BF00F97FFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -481,6 +584,7 @@
 			name = Release;
 		};
 		F2B841411B3F470200E7318C /* Debug */ = {
+		954FDA401B3FA0BF00F97FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +598,7 @@
 			name = Debug;
 		};
 		F2B841421B3F470200E7318C /* Release */ = {
+		954FDA411B3FA0BF00F97FFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +612,7 @@
 			name = Release;
 		};
 		F2B841441B3F470200E7318C /* Debug */ = {
+		954FDA431B3FA0BF00F97FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -520,6 +626,7 @@
 			name = Debug;
 		};
 		F2B841451B3F470200E7318C /* Release */ = {
+		954FDA441B3FA0BF00F97FFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -536,37 +643,49 @@
 
 /* Begin XCConfigurationList section */
 		F2B841131B3F470200E7318C /* Build configuration list for PBXProject "Ekko" */ = {
+		954FDA141B3FA0BF00F97FFF /* Build configuration list for PBXProject "Ekko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2B8413B1B3F470200E7318C /* Debug */,
 				F2B8413C1B3F470200E7318C /* Release */,
+				954FDA3A1B3FA0BF00F97FFF /* Debug */,
+				954FDA3B1B3FA0BF00F97FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F2B8413D1B3F470200E7318C /* Build configuration list for PBXNativeTarget "Ekko" */ = {
+		954FDA3C1B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "Ekko" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2B8413E1B3F470200E7318C /* Debug */,
 				F2B8413F1B3F470200E7318C /* Release */,
+				954FDA3D1B3FA0BF00F97FFF /* Debug */,
+				954FDA3E1B3FA0BF00F97FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F2B841401B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoTests" */ = {
+		954FDA3F1B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "EkkoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2B841411B3F470200E7318C /* Debug */,
 				F2B841421B3F470200E7318C /* Release */,
+				954FDA401B3FA0BF00F97FFF /* Debug */,
+				954FDA411B3FA0BF00F97FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 		F2B841431B3F470200E7318C /* Build configuration list for PBXNativeTarget "EkkoUITests" */ = {
+		954FDA421B3FA0BF00F97FFF /* Build configuration list for PBXNativeTarget "EkkoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2B841441B3F470200E7318C /* Debug */,
 				F2B841451B3F470200E7318C /* Release */,
+				954FDA431B3FA0BF00F97FFF /* Debug */,
+				954FDA441B3FA0BF00F97FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -574,4 +693,5 @@
 /* End XCConfigurationList section */
 	};
 	rootObject = F2B841101B3F470200E7318C /* Project object */;
+	rootObject = 954FDA111B3FA0BF00F97FFF /* Project object */;
 }
