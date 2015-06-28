@@ -1,0 +1,39 @@
+//
+//  EkkoTests.swift
+//  EkkoTests
+//
+<<<<<<< HEAD
+//  Created by Aravind Sundaresan on 6/27/15.
+=======
+//  Created by Rauhul Varma on 6/27/15.
+>>>>>>> a2c2fa5e2d5c63620dc18d0fb3e3cc2c732f2236
+//  Copyright © 2015 GreylockBetas. All rights reserved.
+//
+
+import XCTest
+
+class EkkoTests: XCTestCase {
+    
+    override func setUp() {
+        super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
+    }
+    
+    override func tearDown() {
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
+    }
+    
+    func testExample() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testPerformanceExample() {
+        // This is an example of a performance test case.
+        self.measureBlock() {
+            // Put the code you want to measure the time of here.
+        }
+    }
+    
+}
