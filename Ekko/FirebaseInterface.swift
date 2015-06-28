@@ -32,14 +32,7 @@ class FirebaseInterface:NSObject {
     }
     
     func hasBumped(url: String) {
-        // Write data to Firebase
-        //    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-        //    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-        //    var usersRef = myRef.childByAppendingPath("users")
-        //
-        //    var users = ["Aravind": myLink, "Naren": yourLink]
-        //    usersRmief.setValue(users)
-        var link = ["name": "Google Chrome", "url": url]
+        let link = ["name": "Google Chrome", "url": url]
         print("SENT")
         myRef.updateChildValues(link)
     }

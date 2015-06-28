@@ -20,7 +20,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var firebaseConnector = FirebaseInterface()
     var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
     let quitItem = NSMenuItem(title: "Quit", action: "quit", keyEquivalent: "q")
+    let notifItem = NSMenuItem(title: "Notifications", action: "notifications", keyEquivalent: "n")
     let focusItem = NSMenuItem(title: "Focus Mode", action: "focus", keyEquivalent: "f")
+    let muteItem = NSMenuItem(title: "Mute Sound", action: "mute", keyEquivalent: "m")
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         window.styleMask = NSBorderlessWindowMask
@@ -35,6 +37,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = NSMenu(title: "Ekko")
         
         statusItem.menu!.addItem(focusItem)
+        statusItem.menu!.addItem(muteItem)
+        statusItem.menu!.addItem(notifItem)
         statusItem.menu!.addItem(quitItem)
         
         authWithPassword()
@@ -63,6 +67,28 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSApp.terminate(nil)
     }
     
+    
+    
+    var notifs = true
+    func notifications() {
+        if notifs {
+            notifItem.title = "Notifications ✓"
+        } else {
+            notifItem.title = "Notifications"
+        }
+        notifs = !notifs
+    }
+    
+    var sound = true
+    func mute() {
+        if sound {
+            muteItem.title = "Mute Sound ✓"
+        } else {
+            muteItem.title = "Mute Sound"
+        }
+        sound = !sound
+    }
+    
     var ekkoing = true
     func focus() {
         if ekkoing {
@@ -74,6 +100,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         ekkoing = !ekkoing
     }
+    
     
     func showHideEkko(state: MousePositionState) {
         switch state {
@@ -116,7 +143,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func firebaseListener() {
         myRef.observeEventType(.Value, withBlock: { snapshot in
-            self.appCreator.handleUrlRequest(snapshot.value.objectForKey("url")! as? String)
+            self.appCreator.handleUrlRequest(snapshot.value.objectForKey("url")! as? String, sound: self.sound, notifs: self.notifs)
             }, withCancelBlock: { error in
                 print(error.description)
         })
