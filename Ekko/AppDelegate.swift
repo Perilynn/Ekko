@@ -22,6 +22,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let icon = NSImage(named: "MenuIcon")
     statusItem.image = icon
     statusItem.menu = statusMenu
+    authWithPassword()
+    hasBumped("https://www.google.com")
   }
 
   func applicationWillTerminate(aNotification: NSNotification) {
@@ -47,6 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
           //now logged in
         }
     });
+    firebaseListener()
   }
   
   func authWithGitHub() {
@@ -54,8 +57,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
   }
   
-  func hasBumped() {
-    
+  func hasBumped(url: String) {
+    // Write data to Firebase
+//    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
+//    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
+//    var usersRef = myRef.childByAppendingPath("users")
+//    
+//    var users = ["Aravind": myLink, "Naren": yourLink]
+//    usersRef.setValue(users)
+    var link = ["url": url]
+    myRef.updateChildValues(link)
+  }
+  
+  func firebaseListener() {
+    myRef.observeEventType(.Value, withBlock: { snapshot in
+      print(snapshot.children.nextObject()!.value)
+      }, withCancelBlock: { error in
+        print(error.description)
+    })
   }
 
 }

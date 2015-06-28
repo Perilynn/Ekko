@@ -12,14 +12,6 @@ class ViewController: NSViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    // Write data to Firebase
-    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-    var usersRef = myRef.childByAppendingPath("users")
-    
-    var users = ["Aravind": myLink, "Naren": yourLink]
-    usersRef.setValue(users)
     // Do any additional setup after loading the view.
     
   }
