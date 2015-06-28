@@ -17,10 +17,9 @@
 		F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1811B3F473400A6A028 /* CFNetwork.framework */; };
 		F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1831B3F474200A6A028 /* Security.framework */; };
 		F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */; };
-		F20EF18F1B3F4A5600A6A028 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1871B3F476900A6A028 /* libicucore.tbd */; };
-		F20EF1901B3F4B0A00A6A028 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1891B3F477300A6A028 /* libc++.tbd */; };
 		F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1911B3F4BEF00A6A028 /* libc++.dylib */; };
 		F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */; };
+		F25AFFB51B3F54230090037C /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25AFFB41B3F54230090037C /* Firebase.framework */; };
 		F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411B1B3F470200E7318C /* AppDelegate.swift */; };
 		F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411D1B3F470200E7318C /* ViewController.swift */; };
 		F2B841201B3F470200E7318C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B8411F1B3F470200E7318C /* Assets.xcassets */; };
@@ -53,10 +52,10 @@
 		F20EF1811B3F473400A6A028 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F20EF1831B3F474200A6A028 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F20EF1871B3F476900A6A028 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
-		F20EF1891B3F477300A6A028 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = text; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		F20EF1911B3F4BEF00A6A028 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "../../../../usr/lib/libc++.dylib"; sourceTree = "<group>"; };
 		F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = ../../../../usr/lib/libicucore.dylib; sourceTree = "<group>"; };
+		F25AFFB41B3F54230090037C /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		F25AFFB61B3F59EC0090037C /* Ekko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ekko-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F2B841181B3F470200E7318C /* Ekko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8411B1B3F470200E7318C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B8411D1B3F470200E7318C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,11 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25AFFB51B3F54230090037C /* Firebase.framework in Frameworks */,
 				956684821B3F501A00227661 /* Firebase.framework in Frameworks */,
 				F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */,
 				F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */,
-				F20EF1901B3F4B0A00A6A028 /* libc++.tbd in Frameworks */,
-				F20EF18F1B3F4A5600A6A028 /* libicucore.tbd in Frameworks */,
 				F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */,
 				F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */,
 				F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */,
@@ -117,8 +115,7 @@
 			children = (
 				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
 				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
-				F20EF1891B3F477300A6A028 /* libc++.tbd */,
-				F20EF1871B3F476900A6A028 /* libicucore.tbd */,
+				F25AFFB61B3F59EC0090037C /* Ekko-Bridging-Header.h */,
 				956684811B3F501A00227661 /* Firebase.framework */,
 				F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */,
 				F20EF1831B3F474200A6A028 /* Security.framework */,
@@ -234,6 +231,7 @@
 		F2B841101B3F470200E7318C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = GreylockBetas;
 				TargetAttributes = {
@@ -441,16 +439,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
+					"~/Developer/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ekko-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -458,16 +460,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"~/Xcode/Ekko",
 					"~/Developer/ekko",
+					"~/Developer/Ekko",
 				);
 				INFOPLIST_FILE = Ekko/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = GreylockBetas.Ekko;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ekko-Bridging-Header.h";
 			};
 			name = Release;
 		};
