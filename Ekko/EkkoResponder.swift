@@ -9,14 +9,16 @@
 import Foundation
 
 class EkkoResponder: NSObject {
-  func commonShowMeSomthingNew(state: MousePositionState) {
-    switch state {
-    case .Entered:
-      print("Entered")
-    case .Inside:
-      print("Inside")
-    case .Exited:
-      print("Exited")
+  
+    var appId = AppIdentifier()
+    
+    func commonShowMeSomthingNew() -> [String?] {
+        var app:[String?] = appId.getActiveApplication()
+        if app[0] != nil {
+            return [nil,nil]
+        }
+        else{
+            return app
+        }
     }
-  }
 }

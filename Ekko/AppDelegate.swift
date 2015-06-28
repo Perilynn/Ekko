@@ -12,17 +12,21 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
   
   let responder = EkkoResponder()
+  var appId = AppIdentifier()
+  var appCreator = RequestHandler()
   var state: MousePositionState = .Exited
   @IBOutlet weak var window: NSWindow!
   @IBOutlet weak var statusMenu: NSMenu!
   let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
-  
+  var firebaseConnector = FirebaseInterface()
   var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
 
+    
+    
   func applicationDidFinishLaunching(aNotification: NSNotification) {
     window.styleMask = NSBorderlessWindowMask
     let screen = NSScreen.mainScreen()!.frame
-    window.setFrame(NSRect(x: screen.width - 35, y: 0, width: 35, height: screen.height), display: true)
+    window.setFrame(NSRect(x: screen.width - 50, y: 0, width: 50, height: screen.height), display: true)
     window.backgroundColor = NSColor.grayColor()
     window.alphaValue = 0.01
     window.level = Int(CGWindowLevelForKey(CGWindowLevelKey.MaximumWindowLevelKey))
@@ -30,23 +34,24 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     statusItem.image = icon
     statusItem.menu = statusMenu
     authWithPassword()
-    hasBumped("https://www.google.com") //will replace with input string from AppleScript
+    hasBumped("http://narendasan.com")
     
     
     
     NSEvent.addGlobalMonitorForEventsMatchingMask(NSEventMask.LeftMouseDraggedMask) { (event: NSEvent) -> Void in
       if NSScreen.mainScreen()!.frame.width - event.locationInWindow.x < 35 {
         if self.state == .Exited {
-          self.responder.commonShowMeSomthingNew(.Entered)
-          self.showHideEkko(.Entered)
-          self.state = .Entered
+            print("entered")
+            var app:[String?] = self.appId.getActiveApplication()
+            print(app[1]!)
+            self.hasBumped(app[1]!)
+            self.showHideEkko(.Entered)
+            self.state = .Entered
         } else {
-          self.responder.commonShowMeSomthingNew(.Inside)
           self.showHideEkko(.Inside)
           self.state = .Inside
         }
       } else if self.state == .Entered || self.state == .Inside {
-        self.responder.commonShowMeSomthingNew(.Exited)
         self.showHideEkko(.Exited)
         self.state = .Exited
       }
@@ -67,44 +72,46 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationWillTerminate(aNotification: NSNotification) {
     // Insert code here to tear down your application
   }
-  
-  func authWithPassword() {
-    myRef.authUser("sundrsn2@illinois.edu", password: "ekko1",
-      withCompletionBlock: {error, authData in
+
+    
+    func authWithPassword() {
+        myRef.authUser("sundrsn2@illinois.edu", password: "ekko1",
+            withCompletionBlock: {error, authData in
+                
+                if error != nil {
+                    //error logging in
+                }
+                else {
+                    //now logged in
+                }
+        });
+        firebaseListener()
+    }
+    
+    func authWithGitHub() {
         
-        if error != nil {
-          //error logging in
-        }
-        else {
-          //now logged in
-        }
-    });
-    firebaseListener()
-  }
-  
-  func authWithGitHub() {
+        
+    }
     
+    func hasBumped(url: String) {
+        // Write data to Firebase
+        //    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
+        //    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
+        //    var usersRef = myRef.childByAppendingPath("users")
+        //
+        //    var users = ["Aravind": myLink, "Naren": yourLink]
+        //    usersRmief.setValue(users)
+        var link = ["name": "Google Chrome", "url": url]
+        print("SENT")
+        myRef.updateChildValues(link)
+    }
     
-  }
-  
-  func hasBumped(url: String) {
-    // Write data to Firebase
-    //    var myLink = ["application": "Google Chrome", "url": "https://www.google.com"]
-    //    var yourLink = ["application": "Firefox", "url": "https://www.facebook.com"]
-    //    var usersRef = myRef.childByAppendingPath("users")
-    //
-    //    var users = ["Aravind": myLink, "Naren": yourLink]
-    //    usersRmief.setValue(users)
-    var link = ["name": "Google Chrome", "url": url]
-    myRef.updateChildValues(link)
-  }
-  
-  func firebaseListener() {
-    myRef.observeEventType(.Value, withBlock: { snapshot in
-      print(snapshot.value.objectForKey("url")!)
-      }, withCancelBlock: { error in
-        print(error.description)
-    })
-  }
+    func firebaseListener() {
+        myRef.observeEventType(.Value, withBlock: { snapshot in
+            self.appCreator.handleUrlRequest(snapshot.value.objectForKey("url")! as! String)
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
+    }
 }
 
