@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B09A8DA1B3FF430006A2EBC /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B09A8D91B3FF430006A2EBC /* Firebase.framework */; };
 		F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1811B3F473400A6A028 /* CFNetwork.framework */; };
 		F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1831B3F474200A6A028 /* Security.framework */; };
 		F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */; };
 		F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1911B3F4BEF00A6A028 /* libc++.dylib */; };
 		F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */; };
-		F25AFFB51B3F54230090037C /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25AFFB41B3F54230090037C /* Firebase.framework */; };
 		F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411B1B3F470200E7318C /* AppDelegate.swift */; };
 		F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8411D1B3F470200E7318C /* ViewController.swift */; };
 		F2B841201B3F470200E7318C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B8411F1B3F470200E7318C /* Assets.xcassets */; };
@@ -39,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B09A8D91B3FF430006A2EBC /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		F20EF1811B3F473400A6A028 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F20EF1831B3F474200A6A028 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F20EF1911B3F4BEF00A6A028 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "../../../../usr/lib/libc++.dylib"; sourceTree = "<group>"; };
 		F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = ../../../../usr/lib/libicucore.dylib; sourceTree = "<group>"; };
-		F25AFFB41B3F54230090037C /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		F25AFFB61B3F59EC0090037C /* Ekko-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ekko-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F2B841181B3F470200E7318C /* Ekko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ekko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B8411B1B3F470200E7318C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F25AFFB51B3F54230090037C /* Firebase.framework in Frameworks */,
+				9B09A8DA1B3FF430006A2EBC /* Firebase.framework in Frameworks */,
 				F20EF1931B3F4BEF00A6A028 /* libc++.dylib in Frameworks */,
 				F20EF1941B3F4BEF00A6A028 /* libicucore.dylib in Frameworks */,
 				F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */,
@@ -94,7 +94,7 @@
 		F2B8410F1B3F470200E7318C = {
 			isa = PBXGroup;
 			children = (
-				F25AFFB41B3F54230090037C /* Firebase.framework */,
+				9B09A8D91B3FF430006A2EBC /* Firebase.framework */,
 				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
 				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
 				F25AFFB61B3F59EC0090037C /* Ekko-Bridging-Header.h */,
