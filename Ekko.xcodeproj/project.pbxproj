@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		956684821B3F501A00227661 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956684811B3F501A00227661 /* Firebase.framework */; };
+		9B1466B81B3F558600CC54C4 /* chrome-state.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9B1466B71B3F558600CC54C4 /* chrome-state.scpt */; };
+		9B1466B91B3F558600CC54C4 /* chrome-state.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9B1466B71B3F558600CC54C4 /* chrome-state.scpt */; };
+		9B1466BA1B3F558600CC54C4 /* chrome-state.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9B1466B71B3F558600CC54C4 /* chrome-state.scpt */; };
+		9B1466BC1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1466BB1B3F5A8000CC54C4 /* SystemStatus.swift */; };
+		9B1466BD1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1466BB1B3F5A8000CC54C4 /* SystemStatus.swift */; };
+		9B1466BE1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1466BB1B3F5A8000CC54C4 /* SystemStatus.swift */; };
 		F20EF1821B3F473400A6A028 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1811B3F473400A6A028 /* CFNetwork.framework */; };
 		F20EF1841B3F474200A6A028 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1831B3F474200A6A028 /* Security.framework */; };
 		F20EF1861B3F474A00A6A028 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */; };
@@ -42,6 +48,8 @@
 
 /* Begin PBXFileReference section */
 		956684811B3F501A00227661 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		9B1466B71B3F558600CC54C4 /* chrome-state.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = "chrome-state.scpt"; sourceTree = "<group>"; };
+		9B1466BB1B3F5A8000CC54C4 /* SystemStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemStatus.swift; sourceTree = "<group>"; };
 		F20EF1811B3F473400A6A028 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F20EF1831B3F474200A6A028 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F20EF1851B3F474A00A6A028 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -96,10 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1466B61B3F556500CC54C4 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9B1466B71B3F558600CC54C4 /* chrome-state.scpt */,
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
 		F2B8410F1B3F470200E7318C = {
 			isa = PBXGroup;
 			children = (
-				9B0903891B3F50D6002E9412 /* Firebase.framework */,
 				F20EF1911B3F4BEF00A6A028 /* libc++.dylib */,
 				F20EF1921B3F4BEF00A6A028 /* libicucore.dylib */,
 				F20EF1891B3F477300A6A028 /* libc++.tbd */,
@@ -128,7 +143,9 @@
 		F2B8411A1B3F470200E7318C /* Ekko */ = {
 			isa = PBXGroup;
 			children = (
+				9B1466B61B3F556500CC54C4 /* scripts */,
 				F2B8411B1B3F470200E7318C /* AppDelegate.swift */,
+				9B1466BB1B3F5A8000CC54C4 /* SystemStatus.swift */,
 				F2B8411D1B3F470200E7318C /* ViewController.swift */,
 				F2B8411F1B3F470200E7318C /* Assets.xcassets */,
 				F2B841211B3F470200E7318C /* Main.storyboard */,
@@ -258,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1466B81B3F558600CC54C4 /* chrome-state.scpt in Resources */,
 				F2B841201B3F470200E7318C /* Assets.xcassets in Resources */,
 				F2B841231B3F470200E7318C /* Main.storyboard in Resources */,
 			);
@@ -267,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1466B91B3F558600CC54C4 /* chrome-state.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1466BA1B3F558600CC54C4 /* chrome-state.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +306,7 @@
 			files = (
 				F2B8411E1B3F470200E7318C /* ViewController.swift in Sources */,
 				F2B8411C1B3F470200E7318C /* AppDelegate.swift in Sources */,
+				9B1466BC1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1466BD1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
 				F2B8412E1B3F470200E7318C /* EkkoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1466BE1B3F5A8000CC54C4 /* SystemStatus.swift in Sources */,
 				F2B841391B3F470200E7318C /* EkkoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
