@@ -88,7 +88,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       }
     } else {
       if let jsonError = jsonError {
-        println("json error: \(jsonError)")
+        print("json error: \(jsonError)")
       }
     }
     
