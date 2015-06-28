@@ -65,13 +65,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //    
 //    var users = ["Aravind": myLink, "Naren": yourLink]
 //    usersRef.setValue(users)
-    var link = ["url": url]
+    var link = ["name": "Google Chrome", "url": url]
     myRef.updateChildValues(link)
   }
   
   func firebaseListener() {
     myRef.observeEventType(.Value, withBlock: { snapshot in
-      print(snapshot.children.nextObject()!.value)
+      print(snapshot.value.objectForKey("url")!)
       }, withCancelBlock: { error in
         print(error.description)
     })
