@@ -7,6 +7,9 @@
 //
 
 import Cocoa
+import AppKit
+import Foundation
+import CoreGraphics
 
 class ViewController: NSViewController {
 
@@ -32,6 +35,76 @@ class ViewController: NSViewController {
   
   
 
+class apple: NSView {
+  
+  override func viewWillMoveToWindow(newWindow: NSWindow?) {
+    let rect = CGRectMake(0, 0, newWindow!.frame.width, newWindow!.frame.height)
+    let trackingArea = NSTrackingArea(rect: rect, options: [.ActiveAlways, .MouseEnteredAndExited, .EnabledDuringMouseDrag], owner: self, userInfo: nil)
+    self.addTrackingArea(trackingArea)
+  }
+  
+  override func mouseEntered(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseEntered")
+  }
+  override func mouseExited(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseExited")
+  }
+  override func mouseMoved(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseMoved")
+  }
+  override func mouseDragged(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseDragged")
+  }
+  override func mouseDown(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseDown")
+  }
+  override func mouseUp(theEvent: NSEvent) {
+    //Preform Action
+    NSLog("mouseUp")
+  }
+  override func cursorUpdate(event: NSEvent) {
+    //Preform Action
+    NSLog("cursorUpdate")
+  }
+  
+}
 
+class clearWindow: NSWindow {
+  
+  override init(contentRect: NSRect, styleMask aStyle: Int, backing bufferingType: NSBackingStoreType, `defer` flag: Bool) {
+    super.init(contentRect: NSScreen.mainScreen()!.frame, styleMask: NSBorderlessWindowMask, backing: .Buffered, `defer`: false)
+    thing()
+  }
+  
+  required init?(coder: NSCoder) {
+    super.init(contentRect: NSScreen.mainScreen()!.frame, styleMask: NSBorderlessWindowMask, backing: .Buffered, `defer`: false)
+    thing()
+    
+  }
+
+  func thing() {
+    backgroundColor = NSColor.clearColor()
+    excludedFromWindowsMenu = true
+    canHide = false
+    hasShadow = false
+    alphaValue = 0.5
+    ignoresMouseEvents = true
+    opaque = false
+    orderFrontRegardless()
+    level = Int(CGWindowLevelForKey(CGWindowLevelKey.MaximumWindowLevelKey)) + 1
+    orderFront(nil)
+    makeKeyAndOrderFront(nil)
+  }
+  
+  
+  
+  
+  
+  
 }
 
