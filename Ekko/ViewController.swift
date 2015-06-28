@@ -7,14 +7,13 @@
 //
 
 import Cocoa
-import AppKit
-import Foundation
-import CoreGraphics
 
 class ViewController: NSViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    // Do any additional setup after loading the view.
+    
   }
 
   override var representedObject: AnyObject? {
@@ -22,4 +21,9 @@ class ViewController: NSViewController {
     // Update the view, if already loaded.
     }
   }
+  
+  
+
+
 }
+
