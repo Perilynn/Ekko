@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     var firebaseConnector = FirebaseInterface()
-    var myRef = Firebase(url:"https://greylock-ekko.firebaseio.com/ios/urls/")
+    var myRef = Firebase(url:"https://YOUR_FIREBASE_HERE.firebaseio.com/") //ENTER YOUR FIREBASE HERE
     let quitItem = NSMenuItem(title: "Quit", action: "quit", keyEquivalent: "q")
     let notifItem = NSMenuItem(title: "Notifications", action: "notifications", keyEquivalent: "n")
     let focusItem = NSMenuItem(title: "Focus Mode", action: "focus", keyEquivalent: "f")
@@ -119,7 +119,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     
     func authWithPassword() {
-        myRef.authUser("sundrsn2@illinois.edu", password: "ekko1",
+        myRef.authUser("YOUR_EMAIL_HERE", password: "YOUR_PASSWORD_HERE", //ENTER YOUR COMBO HERE
             withCompletionBlock: {error, authData in
                 
                 if error != nil {
